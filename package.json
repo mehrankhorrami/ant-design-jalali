@@ -1,6 +1,6 @@
 {
   "name": "ant-design-jalali",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for ant-design datepicker and calendar to support Jalali calendar type with dayjs.",
   "keywords": [
     "ant",
@@ -37,6 +37,11 @@
     "jalaliday": "^2.3.0",
     "rc-picker": "^3.14.6"
   },
+  "peerDependencies": {
+    "antd": "^5.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
@@ -44,8 +49,8 @@
     "esbuild": "^0.19.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "typescript": "^3.2.1"
+    "react-scripts": "5.0.0",
+    "typescript": "^5.3.3"
   },
   "browserslist": {
     "production": [
