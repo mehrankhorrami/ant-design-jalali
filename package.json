@@ -1,0 +1,67 @@
+{
+  "name": "ant-design-jalali",
+  "version": "1.0.0",
+  "description": "A wrapper for ant-design datepicker and calendar to support Jalali calendar type with dayjs.",
+  "keywords": [
+    "ant",
+    "datepicker",
+    "calendar",
+    "jalali",
+    "persian",
+    "shamsi",
+    "dayjs",
+    "khorshidi"
+  ],
+  "author": "Mehran Khorrami",
+  "homepage": "https://github.com/mehrankhorrami/ant-design-jalali",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehrankhorrami/ant-design-jalali"
+  },
+  "main": "lib/cjs/index.cjs.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build:demo": "react-scripts build",
+    "ts-declaration": " tsc -p ./tsconfig.lib.json --emitDeclarationOnly --outDir lib/types",
+    "build": "rimraf lib && node ./esbuild.js && npm run ts-declaration"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "jalaliday": "^2.3.0",
+    "rc-picker": "^3.14.6"
+  },
+  "peerDependencies": {
+    "antd": "^4.18.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "antd": "^5.12.5",
+    "esbuild": "^0.19.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^3.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
